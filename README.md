@@ -1,0 +1,2 @@
+# smolgrad
+learning about AGs
