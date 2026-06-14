@@ -1,4 +1,4 @@
-from smolgrad import Value
+from smolgrad import Value, ascii_mlp
 from smolgrad.nn import MLP
 
 xs = [
@@ -11,6 +11,8 @@ xs = [
 ys = [0, 1, 1, 0]
 
 model = MLP(2, [5, 1])  # works better than [4,1]
+print(ascii_mlp(model))
+
 lr = 0.05
 
 for step in range(200):
