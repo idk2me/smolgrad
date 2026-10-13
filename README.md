@@ -11,7 +11,7 @@ The MLP built on top of the autograd engine handles `xor` effortlessly. In 200 s
 
 The MLP built on top of the autograd engine struggles (computationally) with the amount of data from our _two moons_ dataset. The implementation was for a learning exercise so no optimizations were even explored. I just wanted to be able to mentally map how neural networks work.
 
-It doesn't achieve a 100% accuracy with the standard 16, 16, 1 layer structure. I managed to get 100% accuracy (loss ~0.02) with a layout of 8, 16, 16, 1.
+It doesn't achieve a 100% accuracy with the standard 16, 16, 1 layer structure. I managed to get 100% accuracy (loss ~0.02) with a layout of 8, 16, 16, 1. That's not to say this layer structure is guaranteed to give 100%, because it depends on the initial data (in other words - randomness can be abused).
 
 ## Misc
 
