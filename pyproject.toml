@@ -10,5 +10,5 @@ dependencies = [
     "torchvision>=0.27.0",
 ]
 
-[tools.black]
+[tool.black]
 line-length = 80
