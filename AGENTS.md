@@ -30,5 +30,3 @@ uv-managed project, Python 3.14 pinned via `.python-version` (pyproject declares
 - `Value` relies on identity hashing (`prev` is a `set`; `backward()` uses a `visited` set). Do not add value-based `__eq__` without also defining `__hash__`.
 - pyproject.toml declares matplotlib, numpy, and torchvision, but the package and tests are pure stdlib — only `inspect_dataset.ipynb` uses any of them (numpy + matplotlib; torchvision is referenced nowhere).
 - pyproject.toml sets `[tool.black]` with `line-length = 80`, but black is not installed (not in uv.lock). Match the existing ~80-column style by hand instead of reformatting.
-
-
